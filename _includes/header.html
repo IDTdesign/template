@@ -5,7 +5,9 @@
         <span class="breadcrumbs-node col-xxs-shrink">{{ site.title }}</span>
 
         {% if site.github_link %}
-        <a class="github-button col-xxs-shrink space-auto-left-xs" href="{{ site.github_link }}" data-style="mega" aria-label="Open on GitHub">Open on GitHub</a>
+        <div class="col-xxs-shrink space-auto-left-xs">
+            <a class="github-button" href="{{ site.github_link }}" data-style="mega" aria-label="Open on GitHub">Open on GitHub</a>
+        </div>
         {% endif %}
     </nav>
 </header>
