@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body class="blog-layout">
+        {% if jekyll.environment == 'production' and site.google_tag_manager %}
+        {% include google-tag-manager-body.html %}
+        {% endif %}
+
+        <main class="blog-article col-flex-xs">
+            {% include header.html %}
+
+            <article class="blog-article-content flex-grow-xs" aria-label="Content">
+                {{ content }}
+            </article>
+
+            {% include footer.html %}
+        </main>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </body>
+</html>
